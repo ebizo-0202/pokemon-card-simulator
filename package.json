@@ -1,21 +1,37 @@
 {
-  "name": "pokemon-card-simulator",
+  "name": "nuxt-sample",
   "version": "1.0.0",
-  "description": "My doozie Nuxt.js project",
+  "description": "",
   "author": "",
   "private": true,
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate"
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .ts,.js,.vue --ignore-path .gitignore .",
+    "lint-fix": "eslint --ext .ts,.js,.vue --ignore-path .gitignore . --fix"
   },
   "dependencies": {
+    "@nuxtjs/font-awesome": "^1.0.4",
+    "@nuxtjs/vuetify": "^1.2.1",
+    "axios": "^0.19.0",
     "nuxt": "^2.0.0",
+    "pug": "^2.0.4",
+    "pug-loader": "^2.4.0",
+    "pug-plain-loader": "^1.0.0",
     "ts-node": "^8.3.0",
-    "vue-property-decorator": "^8.2.1"
+    "vue-property-decorator": "^8.2.1",
+    "vuex-class": "^0.3.2"
   },
   "devDependencies": {
-    "@nuxt/typescript": "^2.8.1"
+    "@nuxt/typescript": "^2.8.1",
+    "@nuxtjs/eslint-config": "^1.0.1",
+    "@nuxtjs/style-resources": "^1.0.0",
+    "@typescript-eslint/eslint-plugin": "^1.13.0",
+    "@typescript-eslint/parser": "^1.13.0",
+    "eslint": "^6.1.0",
+    "node-sass": "^4.12.0",
+    "sass-loader": "^7.2.0"
   }
 }
