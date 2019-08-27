@@ -1,6 +1,4 @@
-import NuxtConfiguration from '@nuxt/config'
-
-const config: NuxtConfiguration = {
+export default {
 
   mode: 'universal',
   /*
@@ -35,11 +33,13 @@ const config: NuxtConfiguration = {
   ** Nuxt.js dev-modules
   */
   buildModules: [
+    '@nuxt/typescript-build'
   ],
   /*
   ** Nuxt.js modules
   */
   modules: [
+    '@nuxtjs/vuetify'
   ],
   /*
   ** Build configuration
@@ -53,4 +53,3 @@ const config: NuxtConfiguration = {
   }
 }
 
-export default config
