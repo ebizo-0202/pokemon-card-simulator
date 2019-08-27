@@ -1,37 +1,22 @@
-<template>
-  <div class="container">
-    <div>
-      <logo />
-      <h1 class="title">
-        pokemon-card-simulator
-      </h1>
-      <h2 class="subtitle">
-        My doozie Nuxt.js project
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
-    </div>
-  </div>
+<template lang="pug">
+  .deck
+    v-app
+      v-content
+        p.display-2 デッキ一覧画面
+        v-btn(color="primary") 新しいデッキを追加
+        v-layout
+          v-flex(xs12 sm6 offset-sm3)
+            DeckPanel
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator'
+import { Vue, Component } from 'vue-property-decorator'
 
-@Component
+@Component({
+  components: {
+    DeckPanel: () => import('@/components/organisms/DeckPanel.vue')
+  }
+})
 export default class TopPage extends Vue {
 }
 </script>
